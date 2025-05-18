@@ -2,7 +2,7 @@
 This repository contains my solutions to Cowrywise Data Analytics Assessment, focusing on SQL queries that address specific business scenarios within a fintech platform.
 The assessment involved analyzing user savings patterns, transaction behaviours, account activity, and customer lifetime value across multiple database tables.
 
-## PER-QUESTION EXPLANATION
+## Per-Question Explanation
 
 ## Question 1: High-Value Customers with Multiple Products
 
