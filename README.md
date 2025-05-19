@@ -16,7 +16,7 @@ I utilized Common Table Expressions (CTEs) to separately identify customers with
 - Common Table Expressions (CTEs)
 - Aggregation with GROUP BY
 - Inner joins to find overlapping customer sets
-- Conversion of kobo to Naira
+- Currency conversion from kobo to naira
 
 ### Business Value
 This query enables marketing teams to identify high-value customers already familiar with multiple product offerings, creating opportunities for targeted upselling of premium features or new products.
@@ -41,7 +41,7 @@ This segmentation enables targeted customer engagement strategies - from retenti
 ## Question 3: Account Inactivity Alert
 
 ### Business Scenario
-The ops team wants to flag accounts with no inflow transactions for over one year.
+The operations team wants to flag accounts with no inflow transactions for over one year.
 
 ### Approach
 I identified accounts with extended periods of inactivity by using a two-step process that first determines the last transaction date for each plan, then identifies plans where this date exceeds the one-year threshold. The solution distinguishes between different plan types for contextual analysis.
@@ -55,10 +55,10 @@ I identified accounts with extended periods of inactivity by using a two-step pr
 ### Business Value
 This solution helps the operations team prioritize at-risk accounts for intervention, potentially preventing customer churn while maintaining regulatory compliance regarding dormant accounts. The inactivity_days metric allows for tiered intervention strategies based on severity.
 
-## Question 4: Customer Lifetime Value Estimation
+## Question 4: Customer Lifetime Value (CLV) Estimation
 
 ### Business Scenario
-Marketing wants to estimate CLV based on account tenure and transaction volume (simplified model)
+Marketing team wants to estimate CLV based on account tenure and transaction volume (simplified model)
 
 ### Approach
 I implemented the CLV calculation by first establishing key customer metrics (tenure, transaction count, average transaction value), then applying the specified formula with appropriate currency conversions. The analysis accounts for each customer's historical activity to project their future value.
@@ -66,7 +66,7 @@ I implemented the CLV calculation by first establishing key customer metrics (te
 ### Key Techniques
 - Tenure calculation using TIMESTAMPDIFF
 - Complex formula implementation with multiple operations
-- Currency conversion from kobo to standard units
+- Currency conversion from kobo to naira
 - Profit margin calculations incorporated into the analysis
 - Strategic sorting to highlight highest-value customers
 
