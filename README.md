@@ -30,7 +30,7 @@ The finance team wants to analyze how often customers transact to segment them (
 I created a multi-step analysis that first establishes each customer's active period, then calculates their transaction frequency per month, and finally categorizes them based on specified thresholds. Using CTEs provided a clear progression from raw data to actionable segments.
 
 ### Key Techniques
-- Time-based analytics with TIMESTAMPDIFF
+- Time-based analytics with TIMESTAMPDIFF (Used in counting how many months first and last transaction)
 - Sophisticated customer segmentation using CASE statements
 - Handling of edge cases like customers with very short tenures using GREATEST function
 - Advanced aggregation to calculate average metrics per segment
